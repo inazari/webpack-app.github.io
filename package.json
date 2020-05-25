@@ -1,0 +1,30 @@
+{
+  "name": "webpack-app.github.io",
+  "version": "1.0.0",
+  "description": "setting webpack",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inazari/webpack-app.github.io.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "webpack"
+  ],
+  "author": "nsos <nazarsosnovsk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inazari/webpack-app.github.io/issues"
+  },
+  "homepage": "https://github.com/inazari/webpack-app.github.io#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

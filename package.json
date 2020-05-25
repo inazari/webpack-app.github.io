@@ -2,7 +2,6 @@
   "name": "webpack-app.github.io",
   "version": "1.0.0",
   "description": "setting webpack",
-  "main": "webpack.config.js",
   "scripts": {
     "test": "echo hello world;",
     "start": "webpack",
@@ -32,6 +31,8 @@
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
+    "csv-loader": "^3.0.3",
+    "xml-loader": "^1.2.1",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {

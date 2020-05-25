@@ -1,4 +1,5 @@
-import Post from './Post'
+import Post from './Post';
+import './styles/styles.css'
 
 const post = new Post('webpack post title');
 console.log('post to string', post.toString());

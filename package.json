@@ -4,8 +4,10 @@
   "description": "setting webpack",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "test": "echo hello world;",
+    "start": "webpack",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

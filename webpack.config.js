@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-module.exports={
+module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
@@ -12,6 +12,19 @@ module.exports={
     output: {
         filename: '[name].bundle.[contenthash].js',
         path: path.resolve(__dirname, 'dist')
+    },
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
+    resolve: {
+        extensions: ['.js', '.png', '.json'],
+        alias: {
+            '@models': path.resolve(__dirname, 'src/models'),
+            '@assets': path.resolve(__dirname, 'src/assets'),
+            '@': path.resolve(__dirname, 'src')
+        }
     },
     plugins: [
         new HTMLWebpackPlugin({

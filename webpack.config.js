@@ -18,6 +18,9 @@ module.exports = {
             chunks: "all"
         }
     },
+    devServer: {
+        port: 3030
+    },
     resolve: {
         extensions: ['.js', '.png', '.json'],
         alias: {
